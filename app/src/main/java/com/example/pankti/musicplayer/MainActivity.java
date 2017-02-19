@@ -5,19 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ToggleButton;
 
 import java.io.IOException;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn,btn1;
+   Button btn,btn1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+       // ToggleButton TB = (ToggleButton) findViewById(R.id.tb);
         btn = (Button) findViewById(R.id.button);
       //  btn1 = (Button) findViewById(R.id.button1);
 
@@ -30,11 +31,12 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 if(flag[0] ==false)
                 {
                     md[0] = MediaPlayer.create(MainActivity.this,R.raw.soch_na_shake);
                     md[0].start();
-                    btn.setText("Pause");
+                   btn.setText("Pause");
                     flag[0] =true;
                 }
                 else if(md[0].isPlaying()&& flag[0] ==true)
