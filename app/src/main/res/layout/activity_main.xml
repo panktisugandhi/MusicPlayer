@@ -28,28 +28,28 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/button"
-            android:text="play"
-            android:layout_marginTop="13dp"
-            android:layout_marginRight="117dp"
-            android:layout_marginEnd="117dp"
-            android:layout_below="@+id/img"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
-
-        <!--<ToggleButton-->
+        <!--<Button-->
             <!--android:layout_width="wrap_content"-->
             <!--android:layout_height="wrap_content"-->
-            <!--android:id="@+id/tb"-->
+            <!--android:id="@+id/button"-->
+            <!--android:text="play"-->
+            <!--android:layout_marginTop="13dp"-->
+            <!--android:layout_marginRight="117dp"-->
+            <!--android:layout_marginEnd="117dp"-->
             <!--android:layout_below="@+id/img"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_centerInParent="true"-->
-            <!--android:layout_centerVertical="true"-->
-            <!--android:textOff="Stop"-->
-            <!--android:textOn="Play" />-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true" />-->
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tb"
+            android:layout_below="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textOff="Stop"
+            android:textOn="Play" />
 
 
     </RelativeLayout>
